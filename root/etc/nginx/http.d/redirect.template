@@ -1,0 +1,7 @@
+server {
+        listen          8080;
+        listen          [::]:8080;
+
+        server_name     SOURCE_DOMAIN;
+        return          301 https://TARGET_DOMAIN$request_uri;
+}
